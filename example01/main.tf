@@ -56,5 +56,5 @@ resource "google_compute_firewall" "access_to_5000" {
     ports    = ["5000"]
   }
 
-  source_tags = ["webserver"]
+  target_tags = ["webserver"]
 }
